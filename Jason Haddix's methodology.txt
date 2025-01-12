@@ -1,0 +1,27 @@
+Jason Haddix's Bug bounty methodology
+
+                                    CONTENT DISCOVERY
+
+1. Find the tech Profiling they are running using tools like wappylyzer and whatruns.
+
+2. Find CVEs and misconfigs using nuclei templates. But the disadvantages of using Nuclei is that it can lead to duplicates. So
+   if you can develop your own personal nuclei templates, that would be better, compared to using public nuclei templates.
+
+3. You can use RustScan as an option to Nmap for port-scanning. It is Faster.
+
+4. Wordlists depending on your target tech stacks (https://wordlists.assetnote.io/)
+
+5. Try to check if the target's source code is open-source or not 
+
+6. Use Gau for crawling, gau combines (waybackurls, alienvault, openexchange). You can combine it with WordlistGen tool.
+
+
+APPLICATION ASPECT
+
+1. Try to know how the application parses data in both GET and POST requests. Whether through API calls or so. 
+
+2. Try to know where/how the application talks about users. Does it talk about them in cookies, emails, UUIDs, username, UIDs. Understanding such would make you be able to find bugs like IDORS, Access controls or different Authorization bugs and Information disclosures.
+
+3. Does the site have Multi-tenancy or User levels. This will also test how we test authorization or access bugs. You can use tools like AUTHORIZE for the bug testing.
+
+4. You might wish to crawl, using hakrawler or gospider
