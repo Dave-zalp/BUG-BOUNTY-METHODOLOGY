@@ -25,3 +25,14 @@ APPLICATION ASPECT
 3. Does the site have Multi-tenancy or User levels. This will also test how we test authorization or access bugs. You can use tools like AUTHORIZE for the bug testing.
 
 4. You might wish to crawl, using hakrawler or gospider
+
+
+JAVASCRIPT
+
+1. Parse link or urls in JAVASCRIPT files into your sitemap for more content discovery using xnLinkFinder (https://github.com/xnl-h4ck3r/xnLinkFinder)
+
+2. You can use retire.js to check if a JAVASCRIPT library is outdated and has a vulnerability associated with it
+
+PARAMETER ANALYSIS
+
+1. Use gf tool with urls list to capture similar patterns to that class of vulnerability 
