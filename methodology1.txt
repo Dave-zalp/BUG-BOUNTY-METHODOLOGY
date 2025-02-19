@@ -25,6 +25,7 @@ naabu -list subdomains.txt -c 50 -nmap-cli 'nmap -sV -sC' -o naabu-full.txt
 
 Tool-install -( sudo apt install httpx-toolkit )
 cat subdomains.txt | httpx-toolkit -ports 80,443,8080,8000,8888 -threads 200 > subdomains_alive.txt
+or httpx -l targetStart.txt -status-code -title 
 
 cat subdomains_alive.txt | wc -l 
 
@@ -97,3 +98,4 @@ cat subdomains_alive.txt | nuclei -t /home/aung/Priv8-Nuclei/cRlf.yaml -v
 
 Tool-install-(go install github.com/bitquark/shortscan/cmd/shortscan@latest)
 shortscan https://example.com/ -F
+

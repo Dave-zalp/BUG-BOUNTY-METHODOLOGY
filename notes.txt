@@ -1,0 +1,1 @@
+1. Use Linkfinder to find hidden endpoints and parameters on javascript files
